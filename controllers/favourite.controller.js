@@ -7,7 +7,7 @@ export function getFavouriteCity(req, res) {
         });
 }
 
-export async function postFavouriteCity(req, res) {
+export async function addFavouriteCity(req, res) {
     let {cityName} = req.query;
     cityName = decodeURI(cityName);
     try {
